@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment Proof Vault</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Assignment Proof Vault</h1>
+
+    <section class="card">
+      <h2>Register</h2>
+      <input id="r-name" placeholder="Name">
+      <input id="r-email" placeholder="Email">
+      <input id="r-password" type="password" placeholder="Password">
+      <select id="r-role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+      </select>
+      <button onclick="register()">Register</button>
+    </section>
+
+    <section class="card">
+      <h2>Login</h2>
+      <input id="l-email" placeholder="Email">
+      <input id="l-password" type="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </section>
+
+    <section class="card">
+      <h2>Submit Assignment</h2>
+      <input id="studentId" placeholder="Student ID">
+      <input id="fileUrl" placeholder="File URL (demo)">
+      <button onclick="submitAssignment()">Submit</button>
+    </section>
+
+    <p id="msg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
